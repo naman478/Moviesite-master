@@ -1,0 +1,25 @@
+.header_image{
+    width:100px;
+}
+.Link{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    padding-bottom: 10px;
+}
+.header_left{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    gap:20px;
+    align-items: center;
+}
+.Link:hover{
+    color: orange;
+}
+.header{
+    margin-bottom: 20px;
+}
+.active{
+   border-bottom: 1px solid white;
+}

@@ -1,0 +1,154 @@
+p{
+  color:black
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px 10px;
+  margin: auto;
+  width: 90%;
+}
+
+.cards_inside {
+  background-color: blue;
+  padding: 5px;
+  height: 290px;
+  border-radius: 16px;
+  transition: transform 0.09s;
+  opacity: 0.9;
+  position: relative;
+  
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.cards_content_heading {
+  margin-bottom: 5px;
+}
+
+.cards_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 1.5;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.cards_inside:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.cards_content:hover {
+  opacity: 1;
+}
+
+.cards_content_middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  margin-bottom: 15px;
+  font-size: xx-large;
+  margin-left: 69px;
+  text-transform: uppercase;
+}
+
+#cards_margin {
+  margin-bottom: 20px;
+}
+
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 900px;
+  max-height: 80%;
+  overflow-y: auto;
+  outline: none;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal_header {
+  display: flex;
+  gap: 20px;
+}
+
+.modal_image_container {
+  flex: 2; 
+}
+
+.modal_image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.modal_details {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.close_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close_button:hover {
+  color: red;
+}
+
+.modal_overview {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.modal_overview h2 {
+  margin: 0;
+}
+
+.modal_overview p {
+  margin: 0;
+}
